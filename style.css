@@ -1,0 +1,64 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0; /*preenchimento do site*/
+    box-sizing: border-box; /*mantem o tamanho dos elementos*/
+}
+
+.cabecalho{
+    background-color: yellow; /*cor de fundo*/
+    color: black; /*cor do texto*/
+    padding: 1.5rem; /*poderia ser 24px*/
+    /*alinhamento dos itens*/
+    display: flex; /*manter lado a lado*/
+    align-items: center; /*alinhar itens*/
+    justify-content: space-evenly; /*justificar itens*/
+    flex-direction: row; /*por os itens em linha*/
+
+    /*header fixo*/
+    position: sticky; /*posicionamento do header*/
+    left: 0; /**/
+    top: 0;
+    z-index: 999; /*eixo z - profundidade do elemento*/
+}
+    /*logo do header*/
+.div-logo img{
+    width: 35%; /*usando o % para diminuir o seu tamanho*/
+}
+
+.div-button a button{
+width: 5rem; /*poderia ser 80 px*/
+padding: 0.5; /*8 px - prenchimento*/
+background-color: black; /*cor de fundo*/
+color: yellow; /*cor do texto*/
+border: none; /*remover borda*/
+border-radius: 30px; /*borda do button*/
+font-weight: 700; /*peso da fonte*/
+}
+
+.section-01{
+padding: 9rem; /*preenchimento interno da section*/
+background-image: url(imagens/serv2.jpg); /*img de fundo*/
+background-position: center; /*posição da img*/
+background-size: cover; /*cobrir fundo com img*/
+background-repeat: no-repeat; /*não repetir img*/
+
+display: flex; /*manter lado a lado*/
+align-items: center; /*alinhar itens*/
+justify-content: center; /*justificar itens*/
+gap: 2rem; /*faz com que as div quebrem linha se necessário*/
+}
+
+.div01{
+background-color: black; /*cor de fundo*/
+color: yellow; /*cor de texto*/
+text-align: center; /*alinhamento centralizado do texto*/
+font-size: 2rem; /*tamanho da letra*/
+padding: 1rem; /*preenchimento da caixa*/
+width: 25%; /*largura de caixa em porcentagem*/
+min-width: 299px; /*largura minima para as div*/
+}
+
+.div02{
+
+}
