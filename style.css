@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0; /*preenchimento do site*/
     box-sizing: border-box; /*mantem o tamanho dos elementos*/
+    list-style: none; 
 }
 
 .cabecalho{
@@ -37,7 +38,7 @@ font-weight: 700; /*peso da fonte*/
 }
 
 .section-01{
-padding: 9rem; /*preenchimento interno da section*/
+padding: 5rem; /*preenchimento interno da section*/
 background-image: url(imagens/serv2.jpg); /*img de fundo*/
 background-position: center; /*posição da img*/
 background-size: cover; /*cobrir fundo com img*/
@@ -46,19 +47,155 @@ background-repeat: no-repeat; /*não repetir img*/
 display: flex; /*manter lado a lado*/
 align-items: center; /*alinhar itens*/
 justify-content: center; /*justificar itens*/
-gap: 2rem; /*faz com que as div quebrem linha se necessário*/
+gap: 2rem; /*poderia ser 32px*/
+flex-wrap: wrap; /*faz com que as div quebrem linha se necessário*/
+}
+
+.section-01 p{
+    color: rgb(197, 197, 197);
+}
+
+.section-01 p span{
+    color: gold;
 }
 
 .div01{
-background-color: black; /*cor de fundo*/
+background-color: rgba(0, 0, 0, 0.541); /*cor de fundo*/
 color: yellow; /*cor de texto*/
 text-align: center; /*alinhamento centralizado do texto*/
+font-weight: 700;
 font-size: 2rem; /*tamanho da letra*/
 padding: 1rem; /*preenchimento da caixa*/
 width: 25%; /*largura de caixa em porcentagem*/
 min-width: 299px; /*largura minima para as div*/
+height: 20rem; /*altura da caixa*/
+}
+
+    /*aqui estamos estilizando as listas*/
+.ul-div01 li a{
+    text-decoration: none; /*remove o sublinhado*/
+    background-color: black; /*cor do fundo*/
+    color: gold; /*cor do texto*/
+    padding: 2px; /*preenchimento interno*/
+}
+
+.ul-div01 li{
+    margin: 5px 5px; /*alterando os 4 lados externos dos elementos, primeiro valor (superior, inferior) e segundo valor (lados esquerdo, direito)*/
+}
+
+.fa-whatsapp, .fa-cc-visa{
+color: white; /*cor do texto*/
+font-size: 1.3rem; /*tamanho da letra*/
+margin-right: 15rem; /*margem do texto*/
+background-color: black; /*cor de fundo*/
+}
+
+.fa-whatsapp, h3, .fa-cc-visa, h3{
+    color: gold; /*cor de texto*/
+    background-color: black; /*cor do fundo*/
 }
 
 .div02{
+padding: 1rem; /*preenchimento da caixa*/
+width: 25%; /*largura de caixa em porcentagem*/
+min-width: 299px; /*largura minima para as div*/
+height: 20rem; /*altura da caixa utilizando o REM*/
+background-image: url(imagens/serv3.jpg); /*img de fundo*/
+background-repeat: no-repeat; /*não repetir a img*/
+background-size: cover; /*cobrir fundo com img*/
+background-position: center; /*posição da img*/
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+}
 
+.div02 i{
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+}
+
+.img-div{
+    padding: 3%; /*preenchimento interno*/
+    background-image: url(imagens/images.jpg); /*caminho da img*/
+    background-position: center; /*posicionamento da img*/
+    background-size: cover; /*preenchimento total da img na caixa*/
+}
+
+/*estilizando a segunda section*/
+.section-02, .section-04{
+    display: flex; /*tornando lado a lado*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    gap: 1.5rem; /*brecha entre as caixa*/
+    padding: 5rem; /*preenchimento interno*/
+    background-color: rgb(46, 45, 45); /*cor de fundo*/
+    flex-wrap: wrap; /*caso necessário voce poderá quebrar*/
+}
+
+.caixa{
+    width: 25%; /*largura da caixa*/
+    height: 22rem; /*altura da caixa*/
+    background-color: grey; /*cor de fundo*/
+    min-width: 299px; /*largura minima da div*/
+    font-size: 1.2; /*tamanho das letras*/
+    color: gold; /*cor dos textos*/
+    box-shadow: 10px 10px 20px rgb(245, 222, 179, 0.354); /*sombra externas das caixas*/
+    cursor: pointer; /*mudar cursor*/
+}
+
+.caixa:hover{
+     box-shadow: 12px 12px 22px rgb(245, 222, 179, 0.557); /*sombra externas das caixas*/
+    transition: 0.8s; 
+}
+
+.section-03{
+    display: flex; /*tornando lado a lado*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+    gap: 1.5rem; /*brecha entre as caixa*/
+    padding: 5rem; /*preenchimento interno*/
+    background-color: rgb(46, 45, 45); /*cor de fundo*/
+    flex-wrap: wrap; /*caso necessário voce poderá quebrar*/
+}
+
+.div03,.div04{
+    height: 15rem; /*altura das caixas*/
+    padding: 1rem; /*preenchimento interno*/
+    text-align: center; /*alinhando os textos ao inicio*/
+}
+/*estilização dos textos da primeira caixa*/
+.context-text{
+    text-align: start; /*alinhando os textos ao inicio*/
+    margin: 1rem; /*espacamento da caixa*/
+    color: gold; /*cor do texto*/
+    font-weight: 500; /*peso da font*/
+}
+
+.icon-div3e i {
+    color: rgb(3, 3, 3); /*cor do texto*/
+    font-size: 2.5rem; /*tamanho dos icones*/
+    margin-top: 1rem; /*espaçamento superior dos icon*/
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem ;
+}
+/*inicio formatação caixa 02 section 03*/
+.button-div04 a button{
+    padding: 0.5rem; /*preenchimento intero*/
+    background-color: yellow; /*cor de fundo*/
+    color: black; /*cor do texto*/
+    font-weight: 600; /*peso da font*/
+    margin: 1rem 0; /*espaçamento sup/inf 1rem, e 0 nas laterais*/
+}
+
+.text-div04 p{
+    color: black; /*cor do texto*/
 }
