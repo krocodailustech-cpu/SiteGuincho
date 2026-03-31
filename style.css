@@ -309,4 +309,11 @@ gap: 15px;
     .content{
         flex-direction: column;
     }
+
+    .div04{
+    height: 15rem; /*altura das caixas*/
+    text-align: center; /*alinhando os textos ao inicio*/
+    color: black; 
+    font-size: 1.4rem;
+}
 }
