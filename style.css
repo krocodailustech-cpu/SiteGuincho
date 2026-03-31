@@ -229,6 +229,20 @@ gap: 15px;
     margin: 1rem 0; /*espaçamento sup/inf 1rem, e 0 nas laterais*/
 }
 
+.whatsapp img{ /*alterando o icon do whattsapp*/
+    width: 50px; /*largura*/
+}
+
+.whatsapp{ /*div que guarda o icon whattasapp*/
+    position: fixed; /*posicionamento*/
+    right: 25px; /*posiçao a dieita*/
+    bottom: 25px; /*posicição ao bottom*/
+}
+
+.whatsapp img:hover{
+    width: 60px; /*largura*/
+    transition: 0.8s; /*tempo de transição*/
+}
 .text-div04 p{
     color: black; /*cor do texto*/
 }
