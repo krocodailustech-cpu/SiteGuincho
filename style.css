@@ -182,7 +182,7 @@ gap: 15px;
 
 .div03,.div04{
     height: 15rem; /*altura das caixas*/
-    padding: 0.3rem; /*preenchimento interno*/
+    padding: 0.5rem; /*preenchimento interno*/
     text-align: center; /*alinhando os textos ao inicio*/
     color: black;
 }
@@ -310,10 +310,4 @@ gap: 15px;
         flex-direction: column;
     }
 
-    .div04{
-    height: 15rem; /*altura das caixas*/
-    text-align: center; /*alinhando os textos ao inicio*/
-    color: black; 
-    font-size: 0.5rem;
-    }
 }
