@@ -243,6 +243,7 @@ gap: 15px;
     width: 60px; /*largura*/
     transition: 0.8s; /*tempo de transição*/
 }
+
 .text-div04 p{
     color: black; /*cor do texto*/
 }
@@ -310,4 +311,7 @@ gap: 15px;
         flex-direction: column;
     }
 
+    .div04 p{
+    font-size: 0.9rem;
+}
 }
